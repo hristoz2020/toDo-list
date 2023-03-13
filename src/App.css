@@ -1,16 +1,10 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -19,7 +13,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
@@ -28,11 +21,47 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-todo {
+  width: 30%;
+  padding: 30px 0;
+}
+
+.form-todo>input {
+  width: 80%;
+  padding: 3px;
+  font-size: 16px;
+}
+
+.form-todo>button {
+  padding: 6px;
+  border: 1px solid black;
+  background-color: white;
+}
+
+ul {
+  width: 30%;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin: 5px 0;
+  background-color: white;
+  color: black;
+  list-style-type: none;
+}
+
+ul li span,
+ul li button {
+  margin: 5px;
+  font-size: 20px;
+}
+
+ul li button {
+  border: 1px solid black;
+  background-color: red;
+  padding: 5px;
+  color: black;
 }
